@@ -22,7 +22,7 @@ export default function Hero() {
     y.set(clientY);
   };
 
-  const handleMouseEnter = () => {
+  const handleMouseOver = () => {
     setWindowOffset({
       innerWidth: window.innerWidth,
       innerHeight: window.innerHeight,
@@ -48,7 +48,7 @@ export default function Hero() {
   return (
     <section
       onMouseMove={handleMouseMove}
-      onMouseEnter={handleMouseEnter}
+      onMouseOver={handleMouseOver}
       className="grid h-screen place-items-center"
     >
       <div className="space-y-3">
